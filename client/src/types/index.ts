@@ -1,5 +1,3 @@
-import { GridCellProps } from "react-virtualized";
-
 export type Post = {
   id: string;
   caption: string;
