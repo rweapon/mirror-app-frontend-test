@@ -1,5 +1,7 @@
 {
   "name": "mirror-app-frontend-test",
+  "version": "1.0.0",
+  "homepage": "https://rweapon.github.io/mirror-app-frontend-test",
   "scripts": {
     "client": "npm run dev --prefix client",
     "server": "npm run start --prefix server",
@@ -7,7 +9,8 @@
     "prepare:client": "cd client && npm i",
     "prepare:server": "cd server && npm i",
     "prepare": "npm run prepare:client && npm run prepare:server",
-    "postinstall": "npm run prepare"
+    "postinstall": "npm run prepare",
+    "publish": "npm run deploy --prefix client"
   },
   "devDependencies": {
     "concurrently": "^9.1.1"
